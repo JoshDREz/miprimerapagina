@@ -1,0 +1,123 @@
+body{background-color: #8a9e7d; color:black; }
+h1{color: #0e2c40;e2c40;font-family:Cheddar gothic;font-size: 50px;text-align: center;padding: 20px;}
+h2{color:#1a4a5a;text-align: center;margin:10px; border-style: inset;border-radius: 10px;border-color: #0e2c40;}
+p{font-family: Georgia, 'Times New Roman', Times, serif;font-size: 18px;}
+#j-id{color: #583b13;text-align: center;margin:0px;}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+} 
+
+.row {
+  border-style: outset; border-radius: 10px; border-color: #0e2c40;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+ @media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+button{
+border-radius: 5px; border-color: #206fa3; background-color: #d18c2a ; font-size: 15px; margin: 10px; font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{color:#0e2c40;font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 10px; border-style: double;margin: 10px;border-radius: 5px;}
+li{border-color:#2b3738;border-style: groove;border-radius: 5px;color: #583b13;font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+
+li>a {
+  padding: 8px 24px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+a {
+  color: white;
+  text-decoration:none;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+
+.button-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .button-menu-toggle {
+    display: block;
+    background-color: white;
+    border:none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+ 
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20,20,20,0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap:70px;
+    font-size: 40px;
+
+
+  }
+}
